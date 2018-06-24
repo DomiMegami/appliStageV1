@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dominique.fr.jv_activity.PopupModifMdp"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/ombre_cardView"
+        app:cardMaxElevation="@dimen/ombre_cardView"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_titre_modif_profil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Titre_page_bleu"
+                android:text="@string/btn_modif_mdp"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_ancien_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="@string/lbl_ancien_mot_de_passe" />
+
+            <EditText
+                android:id="@+id/et_ancien_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txt_dans_EditText"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lbl_new_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="@string/lbl_nouveau_mot_de_passe" />
+
+            <EditText
+                android:id="@+id/et_new_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txt_dans_EditText"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lbl_verif_new_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="@string/lbl_verif_nouveau_mot_de_passe" />
+
+            <EditText
+                android:id="@+id/et_verif_new_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txt_dans_EditText"
+                android:ems="10"
+                android:inputType="textPersonName" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_valid_modif_mdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_valider"
+                    android:layout_weight="1"
+                    style="@style/bouton_bleu"/>
+                <Button
+                    android:id="@+id/btn_annul_modif_mdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_annuler"
+                    android:layout_weight="1"
+                    android:onClick="annulModif"
+                    style="@style/bouton_bleu"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4e00</color>
+    <color name="colorPrimaryDark">#dc3a24</color>
+    <color name="colorAccent">#00a591</color>
+    <color name="blanc">#FFffff</color>
+    <color name="noir">#000000</color>
+    <color name="txt_sur_fond_sombre">#ffffff</color>
+    <color name="txt_sur_fond_clair">#000000</color>
+    <color name="bkg_btn_select">#dc3a24</color>
+    <color name="bkg_btn_unselect">#20ffffff</color>
+    <color name="bkg_noir_transp">#78000000</color>
+    <color name="bkg_noir_tres_transp">#20000000</color>
+    <color name="bkg_noir_moyen_transp">#30000000</color>
+    <color name="bkg_blanc_transp">#95ffffff</color>
+    <color name="bkg_btn_bleu_trés_transp">#1000a591</color>
+</resources>

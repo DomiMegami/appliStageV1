@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="dominique.fr.jv_activity.FragmentConnexion"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/titre_connexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Titre_page_bleu"
+        android:text="@string/titre_connexion"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_pseudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                style="@style/label"
+                android:text="@string/pseudo" />
+
+            <EditText
+                android:id="@+id/editText_pseudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txt_dans_EditText"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pseudo"
+                android:inputType="textPersonName"
+                android:text="test"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txt_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:layout_weight="2"
+                android:text="@string/mot_de_passe" />
+
+            <EditText
+                android:id="@+id/editText_mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/txt_dans_EditText"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="1234abcd"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_connexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bouton_bleu"
+        android:text="@string/btn_connection"
+        android:onClick="logIn"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:title=""
+        android:id="@+id/go_accueil"
+        android:icon="@drawable/ic_home_white_24dp"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:title=""
+        android:id="@+id/go_contact"
+        android:icon="@drawable/ic_email_white_24dp"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:title=""
+        android:id="@+id/go_connexion"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        app:showAsAction="always"></item>
+
+</menu>
